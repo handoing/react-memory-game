@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>A React.js compile memory game</title>
+  <link rel="stylesheet" href="./css/styles.css" type="text/css"></link>
+  <script type="text/javascript" src="./lib/lodash.js"></script>
+  <script type="text/javascript" src="./lib/react.js"></script>
+  <script type="text/javascript" src="./lib/JSXTransformer.js"></script>
+  <script type="text/jsx" src="./src/status.jsx"></script>
+  <script type="text/jsx" src="./src/board.jsx"></script>
+  <script type="text/jsx" src="./src/game.jsx"></script>
+  <script type="text/jsx" src="./src/wordform.jsx"></script>
+  <script type="text/jsx" src="./src/tile.jsx"></script>
+</head>
+<body>
+<script type="text/jsx">
+  /** @jsx React.DOM */
+
+  React.renderComponent(
+    <Game />,
+    document.querySelector("body")
+  );
+</script>
+</body>
+</html>
